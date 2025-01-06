@@ -1,0 +1,615 @@
+{
+    "set": 13,
+    "champions": [
+      {
+        "id": "akali",
+        "name": "Akali",
+        "cost": 2,
+        "traits": ["Rebel", "Quickstriker"],
+        "ability": {
+          "name": "Shuriken Flip",
+          "description": "Throws a shuriken at the target, dealing magic damage and marking them. Dashes away and then returns to deal additional magic damage."
+        }
+      },
+      {
+        "id": "ambessa_medarda",
+        "name": "Ambessa Medarda",
+        "cost": 4,
+        "traits": ["Ambessa", "Conqueror", "Quickstriker"],
+        "ability": {
+          "name": "Stance Dance",
+          "description": "Switches between Chains and Fists stances, altering attack range and effects. Chains: Gains increased range and deals bonus physical damage. Fists: Gains omnivamp and increased attack speed."
+        }
+      },
+      {
+        "id": "amumu",
+        "name": "Amumu",
+        "cost": 1,
+        "traits": ["Automata", "Watcher"],
+        "ability": {
+          "name": "Obsolete Technology",
+          "description": "Reduces incoming damage and emits sparks every second, dealing magic damage to adjacent enemies."
+        }
+      },
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "cost": 3,
+        "traits": ["Automata", "Dominator"],
+        "ability": {
+          "name": "Static Field",
+          "description": "Gains a shield and shocks the nearest enemies, dealing magic damage and reducing their damage output."
+        }
+      },
+      {
+        "id": "caitlyn",
+        "name": "Caitlyn",
+        "cost": 5,
+        "traits": ["Enforcer", "Sniper"],
+        "ability": {
+          "name": "Air Raid",
+          "description": "Calls in an airship to drop bombs over enemies, dealing physical damage and reducing their defenses."
+        }
+      },
+      {
+        "id": "camille",
+        "name": "Camille",
+        "cost": 2,
+        "traits": ["Enforcer", "Ambusher"],
+        "ability": {
+          "name": "Precision Protocol",
+          "description": "Kicks the target, dealing adaptive damage and healing for a portion of the damage dealt."
+        }
+      },
+      {
+        "id": "cassiopeia",
+        "name": "Cassiopeia",
+        "cost": 3,
+        "traits": ["Black Rose", "Dominator"],
+        "ability": {
+          "name": "Noxious Blast",
+          "description": "Blasts the target with magic damage. Every third cast, spreads miasma to additional enemies, dealing magic damage."
+        }
+      },
+      {
+        "id": "corki",
+        "name": "Corki",
+        "cost": 4,
+        "traits": ["Scrap", "Artillerist"],
+        "ability": {
+          "name": "Missile Barrage",
+          "description": "Locks onto a target and unleashes a barrage of missiles, dealing physical damage and reducing armor."
+        }
+      },
+      {
+        "id": "darius",
+        "name": "Darius",
+        "cost": 1,
+        "traits": ["Conqueror", "Watcher"],
+        "ability": {
+          "name": "Decimate",
+          "description": "Spins, dealing physical damage to adjacent enemies and applying a bleed effect over time."
+        }
+      },
+      {
+        "id": "draven",
+        "name": "Draven",
+        "cost": 1,
+        "traits": ["Conqueror", "Pit Fighter"],
+        "ability": {
+          "name": "Spinning Axes",
+          "description": "Passively empowers attacks to deal bonus physical damage. Can activate to spin an empowered axe."
+        }
+      },
+      {
+        "id": "dr_mundo",
+        "name": "Dr. Mundo",
+        "cost": 4,
+        "traits": ["Experiment", "Dominator"],
+        "ability": {
+          "name": "Chemically Charged",
+          "description": "Heals over time, dealing magic damage to nearby enemies each second. Upon completion, deals burst magic damage to all nearby enemies."
+        }
+      },
+      {
+        "id": "ekko",
+        "name": "Ekko",
+        "cost": 4,
+        "traits": ["Firelight", "Scrap", "Ambusher"],
+        "ability": {
+          "name": "Chronobreak",
+          "description": "Releases afterimages towards the target, dealing physical damage. Synergizes with Vi for additional effects."
+        }
+      },
+      {
+        "id": "elise",
+        "name": "Elise",
+        "cost": 4,
+        "traits": ["Black Rose", "Form Swapper", "Bruiser"],
+        "ability": {
+          "name": "Spider Form",
+          "description": "Transforms into a spider, gaining bonus stats and abilities."
+        }
+      },
+      {
+        "id": "ezreal",
+        "name": "Ezreal",
+        "cost": 3,
+        "traits": ["Academy", "Rebel", "Artillerist"],
+        "ability": {
+          "name": "Mystic Shot",
+          "description": "Fires a shot at the target, dealing magic damage."
+        }
+      },
+      {
+        "id": "gangplank",
+        "name": "Gangplank",
+        "cost": 3,
+        "traits": ["Scrap", "Form Swapper", "Pit Fighter"],
+        "ability": {
+          "name": "Powder Keg",
+          "description": "Sets up a powder keg that explodes after a delay, dealing area damage."
+        }
+      },
+      {
+        "id": "garen",
+        "name": "Garen",
+        "cost": 4,
+        "traits": ["Emissary", "Watcher"],
+        "ability": {
+          "name": "Judgment",
+          "description": "Spins rapidly, dealing damage to nearby enemies."
+        }
+      },
+      {
+        "id": "heimerdinger",
+        "name": "Heimerdinger",
+        "cost": 4,
+        "traits": ["Academy", "Visionary"],
+        "ability": {
+          "name": "H-28G Evolution Turret",
+          "description": "Deploys a turret that attacks enemies, dealing magic damage."
+        }
+      },
+      {
+        "id": "illaoi",
+        "name": "Illaoi",
+        "cost": 4,
+        "traits": ["Rebel", "Sentinel"],
+        "ability": {
+          "name": "Tentacle Smash",
+          "description": "Slams her target with a tentacle, dealing magic damage and healing herself for a portion of the damage dealt."
+        }
+      },
+      {
+        "id": "irelia",
+        "name": "Irelia",
+        "cost": 1,
+        "traits": ["Rebel", "Sentinel"],
+        "ability": {
+          "name": "Bladesurge",
+          "description": "Dashes to her target, dealing physical damage and healing herself. If the target is below a certain health threshold, the cooldown is refreshed."
+        }
+      },
+      {
+        "id": "jayce",
+        "name": "Jayce",
+        "cost": 5,
+        "traits": ["Academy", "Form Swapper"],
+        "ability": {
+          "name": "Mercury Cannon/Mercury Hammer",
+          "description": "Starts in Cannon form, gaining ranged attacks and bonus attack speed. After a set number of attacks, switches to Hammer form, gaining melee attacks that deal bonus magic damage and a shield."
+        }
+      },
+      {
+        "id": "jinx",
+        "name": "Jinx",
+        "cost": 5,
+        "traits": ["Rebel", "Ambusher"],
+        "ability": {
+          "name": "Super Mega Death Rocket!",
+          "description": "Fires a rocket that explodes on impact, dealing magic damage to the target and nearby enemies. The damage increases with distance traveled."
+        }
+      },
+      {
+        "id": "kogmaw",
+        "name": "Kog'Maw",
+        "cost": 3,
+        "traits": ["Automata", "Sniper"],
+        "ability": {
+          "name": "Living Artillery",
+          "description": "Launches a projectile at a random enemy, dealing magic damage. If the target is below a certain health threshold, the damage is increased."
+        }
+      },
+      {
+        "id": "leblanc",
+        "name": "LeBlanc",
+        "cost": 5,
+        "traits": ["Black Rose", "Sorcerer"],
+        "ability": {
+          "name": "Sigil of Malice",
+          "description": "Projects a sigil onto her target, dealing magic damage. After a short delay, the sigil detonates, dealing additional magic damage."
+        }
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "cost": 2,
+        "traits": ["Academy", "Sentinel"],
+        "ability": {
+          "name": "Solar Flare",
+          "description": "Calls down a solar beam on a random enemy, dealing magic damage and stunning enemies within the area."
+        }
+      },
+      {
+        "id": "loris",
+        "name": "Loris",
+        "cost": 3,
+        "traits": ["Enforcer", "Sentinel"],
+        "ability": {
+          "name": "Luminous Strike",
+          "description": "Unleashes a burst of light in a line, dealing magic damage to all enemies hit and reducing their attack speed."
+        }
+      },
+      {
+        "id": "lux",
+        "name": "Lux",
+        "cost": 1,
+        "traits": ["Academy", "Sorcerer"],
+        "ability": {
+          "name": "Final Spark",
+          "description": "Fires a laser in a line, dealing magic damage to all enemies hit. If she gets a takedown, refunds a portion of her mana."
+        }
+      },
+      {
+        "id": "malzahar",
+        "name": "Malzahar",
+        "cost": 5,
+        "traits": ["Automata", "Visionary"],
+        "ability": {
+          "name": "Nether Grasp",
+          "description": "Suppresses the target, dealing magic damage over time and applying grievous wounds."
+        }
+      },
+      {
+        "id": "mordekaiser",
+        "name": "Mordekaiser",
+        "cost": 5,
+        "traits": ["Conqueror", "Dominator"],
+        "ability": {
+          "name": "Realm of Death",
+          "description": "Banishes the target to the Death Realm, dealing magic damage and stealing a portion of their stats for the duration."
+        }
+      },
+      {
+        "id": "morgana",
+        "name": "Morgana",
+        "cost": 1,
+        "traits": ["Black Rose", "Visionary"],
+        "ability": {
+          "name": "Soul Shackles",
+          "description": "Links herself to nearby enemies, dealing magic damage and stunning them after a short delay if they remain within range."
+        }
+      },
+      {
+        "id": "nami",
+        "name": "Nami",
+        "cost": 3,
+        "traits": ["Emissary", "Sorcerer"],
+        "ability": {
+          "name": "Tidal Wave",
+          "description": "Summons a massive tidal wave that knocks up and slows enemies it passes through, dealing magic damage."
+        }
+      },
+      {
+        "id": "nocturne",
+        "name": "Nocturne",
+        "cost": 2,
+        "traits": ["Automata", "Quickstriker"],
+        "ability": {
+          "name": "Paranoia",
+          "description": "Reduces the vision of all enemies and dashes to the lowest health enemy, dealing physical damage and fearing them."
+        }
+      },
+      {
+        "id": "nunu",
+        "name": "Nunu & Willump",
+        "cost": 3,
+        "traits": ["Experiment", "Bruiser", "Visionary"],
+        "ability": {
+          "name": "Consume",
+          "description": "Nunu commands Willump to bite a target, dealing magic damage and healing himself. If the target is below a certain health threshold, the damage and healing are increased."
+        }
+      },
+      {
+        "id": "powder",
+        "name": "Powder",
+        "cost": 1,
+        "traits": ["Family", "Scrap", "Ambusher"],
+        "ability": {
+          "name": "Explosive Charge",
+          "description": "Throws a grenade at the target, dealing magic damage and applying a debuff that reduces healing received."
+        }
+      },
+      {
+        "id": "rell",
+        "name": "Rell",
+        "cost": 2,
+        "traits": ["Conqueror", "Sentinel", "Visionary"],
+        "ability": {
+          "name": "Attract and Repel",
+          "description": "Links herself to an ally, granting them a shield. Upon breaking or reactivation, stuns nearby enemies and deals magic damage."
+        }
+      },
+      {
+        "id": "renata_glasc",
+        "name": "Renata Glasc",
+        "cost": 2,
+        "traits": ["Chem-Baron", "Visionary"],
+        "ability": {
+          "name": "Toxic Wave",
+          "description": "Releases a toxic wave, dealing magic damage to all enemies in a line and applying a poison that reduces healing."
+        }
+      },
+      {
+        "id": "renni",
+        "name": "Renni",
+        "cost": 3,
+        "traits": ["Chem-Baron", "Bruiser"],
+        "ability": {
+          "name": "Chemical Slam",
+          "description": "Slams the ground, dealing magic damage to nearby enemies and reducing their attack speed."
+        }
+      },
+      {
+        "id": "rumble",
+        "name": "Rumble",
+        "cost": 5,
+        "traits": ["Junker King", "Scrap", "Sentinel"],
+        "ability": {
+          "name": "The Equalizer",
+          "description": "Deploys a line of rockets that deal magic damage over time to enemies standing in the area."
+        }
+      },
+      {
+        "id": "scar",
+        "name": "Scar",
+        "cost": 3,
+        "traits": ["Firelight", "Watcher"],
+        "ability": {
+          "name": "Flame Burst",
+          "description": "Unleashes a burst of flame, dealing magic damage to enemies in a cone and applying a burn effect."
+        }
+      },
+      {
+        "id": "sett",
+        "name": "Sett",
+        "cost": 2,
+        "traits": ["Rebel", "Bruiser"],
+        "ability": {
+          "name": "Haymaker",
+          "description": "Delivers a powerful punch, dealing true damage to the target and physical damage to enemies behind them."
+        }
+      },
+      {
+        "id": "sevika",
+        "name": "Sevika",
+        "cost": 5,
+        "traits": ["High-Roller", "Chem-Baron", "Pit Fighter"],
+        "ability": {
+          "name": "Power Fist",
+          "description": "Charges her gauntlet and punches the target, dealing magic damage and stunning them."
+        }
+      },
+      {
+        "id": "silco",
+        "name": "Silco",
+        "cost": 4,
+        "traits": ["Chem-Baron", "Dominator"],
+        "ability": {
+          "name": "Unstable Concoction",
+          "description": "Injects an ally with a concoction, granting them bonus attack speed and causing them to explode upon death, dealing magic damage to nearby enemies."
+        }
+      },
+      {
+        "id": "singed",
+        "name": "Singed",
+        "cost": 1,
+        "traits": ["Chem-Baron", "Sentinel"],
+        "ability": {
+          "name": "Poison Trail",
+          "description": "Leaves a trail of poison behind him, dealing magic damage over time to enemies standing in it."
+        }
+      },
+      {
+        "id": "smeech",
+        "name": "Smeech",
+        "cost": 3,
+        "traits": ["Chem-Baron", "Ambusher"],
+        "ability": {
+          "name": "Shadow Assault",
+          "description": "Dashes through enemies, dealing physical damage and becoming untargetable during the dash."
+        }
+      },
+      {
+        "id": "steb",
+        "name": "Steb",
+        "cost": 1,
+        "traits": ["Enforcer", "Bruiser"],
+        "ability": {
+          "name": "Shield Bash",
+          "description": "Raises his shield, reducing incoming damage and dealing magic damage to enemies in front of him."
+        }
+      },
+      {
+        "id": "swain",
+        "name": "Swain",
+        "cost": 3,
+        "traits": ["Conqueror", "Form Swapper", "Sorcerer"],
+        "ability": {
+          "name": "Dragon's Descent",
+          "description": "Transforms into a dragon, gaining bonus health and dealing magic damage to enemies around him."
+        }
+      },
+      {
+        "id": "tristana",
+        "name": "Tristana",
+        "cost": 2,
+        "traits": ["Emissary", "Artillerist"],
+        "ability": {
+          "name": "Buster Shot",
+          "description": "Fires a massive cannonball at the target, dealing magic damage and knocking them back."
+        }
+      },
+      {
+        "id": "trundle",
+        "name": "Trundle",
+        "cost": 1,
+        "traits": ["Scrap", "Bruiser"],
+        "ability": {
+          "name": "Subjugate",
+          "description": "Drains the target's health, dealing magic damage and healing himself for a portion of the damage dealt."
+        }
+      },
+      {
+        "id": "twisted_fate",
+        "name": "Twisted Fate",
+        "cost": 3,
+        "traits": ["Enforcer", "Quickstriker"],
+        "ability": {
+          "name": "Pick a Card",
+          "description": "Throws a card at a random enemy, dealing magic damage and applying a random effect based on the card color."
+        }
+      },
+      {
+        "id": "twitch",
+        "name": "Twitch",
+        "cost": 4,
+        "traits": ["Experiment", "Pit Fighter", "Artillerist"],
+        "ability": {
+          "name": "Spray and Pray",
+          "description": "Gains increased attack damage and attack speed for a duration. His attacks become piercing, dealing damage to all enemies in a line."
+        }
+      },
+      {
+        "id": "urgot",
+        "name": "Urgot",
+        "cost": 2,
+        "traits": ["Experiment", "Pit Fighter", "Artillerist"],
+        "ability": {
+          "name": "Fear Beyond Death",
+          "description": "Fires a drill at the target, dealing magic damage and pulling them towards him if they are below a health threshold, executing them if they reach him."
+        }
+      },
+      {
+        "id": "vander",
+        "name": "Vander",
+        "cost": 2,
+        "traits": ["Family", "Watcher"],
+        "ability": {
+          "name": "Crushing Blow",
+          "description": "Slams his target, dealing physical damage and stunning them for a short duration."
+        }
+      },
+      {
+        "id": "vex",
+        "name": "Vex",
+        "cost": 1,
+        "traits": ["Rebel", "Visionary"],
+        "ability": {
+          "name": "Personal Space",
+          "description": "Shields herself for a few seconds. When the shield expires, it deals magic damage to all nearby enemies."
+        }
+      },
+      {
+        "id": "vi",
+        "name": "Vi",
+        "cost": 4,
+        "traits": ["Enforcer", "Pit Fighter"],
+        "ability": {
+          "name": "Assault and Battery",
+          "description": "Targets the farthest enemy, charging towards them and knocking aside all enemies in her path. Upon reaching the target, deals physical damage and knocks them up."
+        }
+      },
+      {
+        "id": "viktor",
+        "name": "Viktor",
+        "cost": 6,
+        "traits": ["Machine Herald"],
+        "ability": {
+          "name": "Chaos Storm",
+          "description": "Summons a singularity at a location that zaps the nearest enemy, dealing magic damage over time and reducing their magic resistance."
+        }
+      },
+      {
+        "id": "violet",
+        "name": "Violet",
+        "cost": 1,
+        "traits": ["Family", "Pit Fighter"],
+        "ability": {
+          "name": "Vault Breaker",
+          "description": "Charges up and then dashes forward, dealing physical damage to all enemies in her path and knocking them up."
+        }
+      },
+      {
+        "id": "vladimir",
+        "name": "Vladimir",
+        "cost": 2,
+        "traits": ["Black Rose", "Sorcerer", "Watcher"],
+        "ability": {
+          "name": "Transfusion",
+          "description": "Deals magic damage to the target and heals himself for a portion of the damage dealt."
+        }
+      },
+      {
+        "id": "warwick",
+        "name": "Warwick",
+        "cost": 6,
+        "traits": ["Blood Hunter", "Experiment"],
+        "ability": {
+          "name": "Infinite Duress",
+          "description": "Leaps to the lowest health enemy, suppressing them and dealing magic damage over time. Heals himself for a portion of the damage dealt."
+        }
+      },
+      {
+        "id": "zeri",
+        "name": "Zeri",
+        "cost": 2,
+        "traits": ["Firelight", "Sniper"],
+        "ability": {
+          "name": "Ultrashock Laser",
+          "description": "Fires a laser that damages and slows the first enemy hit. If the target is already slowed, the laser deals bonus damage."
+        }
+      },
+      {
+        "id": "ziggs",
+        "name": "Ziggs",
+        "cost": 2,
+        "traits": ["Scrap", "Dominator"],
+        "ability": {
+          "name": "Bouncing Bomb",
+          "description": "Throws a bomb at a random enemy, dealing magic damage to the target and nearby enemies."
+        }
+      },
+      {
+        "id": "zoe",
+        "name": "Zoe",
+        "cost": 4,
+        "traits": ["Rebel", "Sorcerer"],
+        "ability": {
+          "name": "Paddle Star",
+          "description": "Fires a star that travels in a line, dealing magic damage to the first enemy hit. If the star doesn't hit an enemy, it returns to her and empowers her next attack to deal bonus magic damage."
+        }
+      },
+      {
+        "id": "zyra",
+        "name": "Zyra",
+        "cost": 1,
+        "traits": ["Experiment", "Sorcerer"],
+        "ability": {
+          "name": "Grasping Roots",
+          "description": "Sends vines towards the current target, stunning them and dealing magic damage. Smaller vines seek out additional enemies, dealing magic damage to them."
+        }
+    }
+    ]
+}

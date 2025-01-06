@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+TFT Comp Builder
 
-## Getting Started
+This project is a Teamfight Tactics (TFT) Comp Builder application that allows users to:
 
-First, run the development server:
+Drag champions from a pool to a custom composition.
 
-```bash
+Display activated traits based on the current champions in the composition.
+
+Features
+
+1. Champion Pool
+
+Displays all available champions that users can drag to their composition.
+
+Each champion card shows the following details:
+
+Name
+
+Cost
+
+Traits
+
+2. Your Comp
+
+A designated area where users can drop champions to create a custom comp.
+
+Users can rearrange champions within the composition.
+
+3. Activated Traits
+
+A side section dynamically calculates and displays:
+
+Traits of the champions in the current composition.
+
+The count of champions contributing to each trait.
+
+Technologies Used
+
+React: Component-based user interface.
+
+TypeScript: Strongly typed language for building robust applications.
+
+Next.js: Framework for server-rendered React applications.
+
+react-beautiful-dnd: For implementing drag-and-drop functionality.
+
+Tailwind CSS: Utility-first CSS framework for styling.
+
+How to Run the Project
+
+Clone the repository:
+
+git clone <repository-url>
+cd <repository-folder>
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+File Structure
 
-## Learn More
+.
+├── app
+│   ├── page.tsx           # Homepage for the comp builder
+│   ├── saved/             # Saved comps page (if implemented later)
+│   ├── [compId]/          # Dynamic route for comp details (if implemented later)
+├── components
+│   ├── ChampionCard.tsx   # Displays individual champion info
+│   ├── CompBuilder.tsx    # Core component for building a comp
+│   ├── NavBar.tsx         # Navigation bar
+├── styles
+│   ├── globals.css        # Global styles
+├── public
+│   ├── tftData.json       # JSON data for all champions
 
-To learn more about Next.js, take a look at the following resources:
+Data Format
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application expects champion data to be in the following JSON format:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+{
+  "set": 13,
+  "champions": [
+    {
+      "id": "zoe",
+      "name": "Zoe",
+      "cost": 4,
+      "traits": ["Rebel", "Sorcerer"],
+      "ability": {
+        "name": "Paddle Star",
+        "description": "Fires a star that travels in a line, dealing magic damage to the first enemy hit."
+      }
+    },
+    {
+      "id": "zyra",
+      "name": "Zyra",
+      "cost": 1,
+      "traits": ["Experiment", "Sorcerer"],
+      "ability": {
+        "name": "Grasping Roots",
+        "description": "Sends vines towards the current target, stunning them and dealing magic damage."
+      }
+    }
+  ]
+}
 
-## Deploy on Vercel
+Future Enhancements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Save Functionality: Allow users to save their comps to local storage.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Saved Comps Page: Display saved comps for later reference.
+
+Detailed View: Enable a detailed view of saved comps.
+
+Contributing
+
+Fork the repository.
+
+Create a new branch:
+
+git checkout -b feature/your-feature-name
+
+Commit your changes:
+
+git commit -m "Add your message here"
+
+Push to the branch:
+
+git push origin feature/your-feature-name
+
+Open a pull request.
+
