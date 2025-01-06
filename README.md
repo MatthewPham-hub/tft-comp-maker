@@ -1,72 +1,61 @@
-TFT Comp Builder
+# TFT Comp Builder
 
-This project is a Teamfight Tactics (TFT) Comp Builder application that allows users to:
+This project is a **Teamfight Tactics (TFT) Comp Builder** application that allows users to:
+- Drag champions from a pool to a custom composition.
+- Display activated traits based on the current champions in the composition.
 
-Drag champions from a pool to a custom composition.
+## Features
 
-Display activated traits based on the current champions in the composition.
+### 1. **Champion Pool**
+- Displays all available champions that users can drag to their composition.
+- Each champion card shows the following details:
+  - Name
+  - Cost
+  - Traits
 
-Features
+### 2. **Your Comp**
+- A designated area where users can drop champions to create a custom comp.
+- Users can rearrange champions within the composition.
 
-1. Champion Pool
+### 3. **Activated Traits**
+- A side section dynamically calculates and displays:
+  - Traits of the champions in the current composition.
+  - The count of champions contributing to each trait.
 
-Displays all available champions that users can drag to their composition.
+## Technologies Used
 
-Each champion card shows the following details:
+- **React**: Component-based user interface.
+- **TypeScript**: Strongly typed language for building robust applications.
+- **Next.js**: Framework for server-rendered React applications.
+- **react-beautiful-dnd**: For implementing drag-and-drop functionality.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
 
-Name
+## How to Run the Project
 
-Cost
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
 
-Traits
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2. Your Comp
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-A designated area where users can drop champions to create a custom comp.
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
 
-Users can rearrange champions within the composition.
+## File Structure
 
-3. Activated Traits
-
-A side section dynamically calculates and displays:
-
-Traits of the champions in the current composition.
-
-The count of champions contributing to each trait.
-
-Technologies Used
-
-React: Component-based user interface.
-
-TypeScript: Strongly typed language for building robust applications.
-
-Next.js: Framework for server-rendered React applications.
-
-react-beautiful-dnd: For implementing drag-and-drop functionality.
-
-Tailwind CSS: Utility-first CSS framework for styling.
-
-How to Run the Project
-
-Clone the repository:
-
-git clone <repository-url>
-cd <repository-folder>
-
-Install dependencies:
-
-npm install
-
-Start the development server:
-
-npm run dev
-
-Open your browser and navigate to:
-
-http://localhost:3000
-
-File Structure
-
+```
 .
 ├── app
 │   ├── page.tsx           # Homepage for the comp builder
@@ -80,11 +69,13 @@ File Structure
 │   ├── globals.css        # Global styles
 ├── public
 │   ├── tftData.json       # JSON data for all champions
+```
 
-Data Format
+## Data Format
 
 The application expects champion data to be in the following JSON format:
 
+```json
 {
   "set": 13,
   "champions": [
@@ -110,30 +101,32 @@ The application expects champion data to be in the following JSON format:
     }
   ]
 }
+```
 
-Future Enhancements
+## Future Enhancements
 
-Save Functionality: Allow users to save their comps to local storage.
+- **Save Functionality**: Allow users to save their comps to local storage.
+- **Saved Comps Page**: Display saved comps for later reference.
+- **Detailed View**: Enable a detailed view of saved comps.
 
-Saved Comps Page: Display saved comps for later reference.
+## Contributing
 
-Detailed View: Enable a detailed view of saved comps.
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
 
-Contributing
+## License
 
-Fork the repository.
-
-Create a new branch:
-
-git checkout -b feature/your-feature-name
-
-Commit your changes:
-
-git commit -m "Add your message here"
-
-Push to the branch:
-
-git push origin feature/your-feature-name
-
-Open a pull request.
+This project is open source and available under the [MIT License](LICENSE).
 
