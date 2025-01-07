@@ -33,19 +33,6 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Home">
           <HoveredLink href="/comps">Go to Homepage</HoveredLink>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Saved Comps">
-          <div className="flex flex-col space-y-4 text-sm">
-            {savedComps.length > 0 ? (
-              savedComps.map((comp) => (
-                <HoveredLink key={comp.id} href={`/comps/${comp.id}`}>
-                  {comp.name}
-                </HoveredLink>
-              ))
-            ) : (
-              <p>No saved comps</p>
-            )}
-          </div>
-        </MenuItem>
       </Menu>
     </div>
   );

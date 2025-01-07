@@ -1,3 +1,4 @@
+"use client";
 // Saved Comps Page
 import React, { useEffect, useState } from "react";
 import { NavBar } from "../../components/NavBar"
