@@ -911,7 +911,7 @@
                 "effect": "50% Attack Damage, launch a rocket every 5 attacks that deals double damage"
               }
             ],
-            "icon": "Artillerist.png"
+            "icon": "artillerist.png"
           },          
         {
             "name": "Automata",
@@ -931,7 +931,7 @@
                 }
                 
             ],
-            "icon": "Automata.png"
+            "icon": "automata.png"
         },
         {
             "name": "Black Rose",
