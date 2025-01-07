@@ -34,11 +34,14 @@ const CompBuilder: React.FC<CompBuilderProps> = ({ champions, traits }) => {
   const onDragEnd = (result: DropResult) => {
     const { source, destination } = result;
 
-    // If no destination, delete from roster if dragged out
+    // If no destination, handle removal from comp
     if (!destination) {
       if (source.droppableId === "comp") {
         const updatedComp = Array.from(comp);
-        updatedComp.splice(source.index, 1);
+        const [removedChampion] = updatedComp.splice(source.index, 1);
+
+        // Add removed champion back to the pool
+        setChampionPool((prevPool) => [...prevPool, removedChampion]);
         setComp(updatedComp);
       }
       return;
@@ -51,6 +54,12 @@ const CompBuilder: React.FC<CompBuilderProps> = ({ champions, traits }) => {
         const [movedChampion] = updatedComp.splice(source.index, 1);
         updatedComp.splice(destination.index, 0, movedChampion);
         setComp(updatedComp);
+      }
+      if (source.droppableId === "pool") {
+        const updatedPool = Array.from(championPool);
+        const [movedChampion] = updatedPool.splice(source.index, 1);
+        updatedPool.splice(destination.index, 0, movedChampion);
+        setChampionPool(updatedPool);
       }
     } else {
       // If dragging from pool to comp
@@ -70,11 +79,16 @@ const CompBuilder: React.FC<CompBuilderProps> = ({ champions, traits }) => {
         setComp(updatedComp);
       }
 
-      // If dragging from comp to pool, remove it
+      // If dragging from comp to pool
       if (source.droppableId === "comp" && destination.droppableId === "pool") {
         const updatedComp = Array.from(comp);
-        updatedComp.splice(source.index, 1);
+        const [movedChampion] = updatedComp.splice(source.index, 1);
+
+        const updatedPool = Array.from(championPool);
+        updatedPool.splice(destination.index, 0, movedChampion);
+
         setComp(updatedComp);
+        setChampionPool(updatedPool);
       }
     }
   };
